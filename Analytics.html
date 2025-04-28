@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analytics - Wings on Time</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .card-highlight {
+      border-left: 5px solid #0d6efd;
+      padding-left: 1rem;
+    }
+    .summary-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #0d6efd;
+    }
+    .decision-table th {
+      background-color: #0d6efd;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Wings on Time</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="analytics.html">Analytics</a></li>
+        <li class="nav-item"><a class="nav-link" href="Report.html">Reports</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    <h2 class="mb-4">Executive Summary</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-highlight">
+          <div class="card-body">
+            <p class="summary-title">Average Delay Time</p>
+            <p>23 minutes (daily average)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-highlight">
+          <div class="card-body">
+            <p class="summary-title">Top Performer</p>
+            <p>Airline B (95% on-time)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-highlight">
+          <div class="card-body">
+            <p class="summary-title">Most Delayed</p>
+            <p>Airline F (avg delay: 41 mins)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5" />
+
+    <h3>Problem Areas</h3>
+    <p>Below visuals highlight key issues affecting operational performance.</p>
+    <ul>
+      <li>Airline F – high volume of delays due to technical issues</li>
+      <li>Route ORD → JFK – consistently delayed beyond 30 mins</li>
+      <li>Peak congestion: 5–7 PM on weekdays</li>
+    </ul>
+
+    <hr class="my-5" />
+
+    <h3>Impact on Passengers</h3>
+    <ul>
+      <li>High delays result in missed connections, particularly at SFO and JFK</li>
+      <li>Business class flyers affected 23% more than economy</li>
+      <li>Compensation demands up by 17% month-over-month</li>
+    </ul>
+
+    <hr class="my-5" />
+
+    <h3>Airline Operational Restructuring Suggestions</h3>
+    <ul>
+      <li>Audit Airline F for crew and maintenance routines</li>
+      <li>Optimize turnaround times at LAX and SFO</li>
+      <li>Reassess aircraft allocation for low-performance routes</li>
+    </ul>
+
+    <hr class="my-5" />
+
+    <h3>Most Common Delay Reason</h3>
+    <p>Technical Delays (38%) are the leading contributor to overall delays, followed by Air Traffic (24%).</p>
+
+    <hr class="my-5" />
+
+    <h3>Operational Decision Matrix</h3>
+    <table class="table table-bordered decision-table">
+      <thead>
+        <tr>
+          <th>Area</th>
+          <th>Decision</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Airline Ops</td>
+          <td>Who to audit, who performs well</td>
+        </tr>
+        <tr>
+          <td>Schedule Mgmt</td>
+          <td>Rescheduling, route changes</td>
+        </tr>
+        <tr>
+          <td>Airport Mgmt</td>
+          <td>Resource balancing</td>
+        </tr>
+        <tr>
+          <td>Passenger Service</td>
+          <td>Compensation, loyalty handling</td>
+        </tr>
+        <tr>
+          <td>Technical/Maintenance</td>
+          <td>Investment or inspection plans</td>
+        </tr>
+        <tr>
+          <td>Business Strategy</td>
+          <td>Revenue risk, fare adjustments</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

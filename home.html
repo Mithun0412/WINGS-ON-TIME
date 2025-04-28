@@ -1,0 +1,101 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Wings on Time – Flight Analytics</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> <style> body { background: linear-gradient(to top, #dfefff, #ffffff); font-family: 'Segoe UI', sans-serif; }
+  .navbar {
+  background-color: #003366;
+}
+
+.navbar-brand, .nav-link, .navbar-nav .nav-link.active {
+  color: #fff !important;
+}
+
+.hero {
+  background: url('1669376182_aviation.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.summary-card {
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+}
+
+.summary-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+}
+
+.about-section {
+  background-color: #f5f9ff;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.section-title {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+</style> </head> <body> 
+  <!-- Navigation Bar --> 
+   <nav class="navbar navbar-expand-lg navbar-dark"> 
+    <div class="container"> <a class="navbar-brand" href="#">Wings on Time</a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
+        <span class="navbar-toggler-icon"></span> 
+      </button> <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> 
+        <ul class="navbar-nav"> 
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li> 
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="analytics.html">Analytics</a></li>
+          <li class="nav-item"><a class="nav-link" href="report.html">Reports</a></li> 
+          <li class="nav-item"><a class="nav-link" href="developer.html">Developer</a></li> 
+        </ul> 
+      </div> 
+    </div> 
+  </nav> <!-- Hero Section --> 
+  <section class="hero"> <div class="container hero-content"> 
+    <h1 class="display-4 fw-bold">✈️ Welcome to the Wings on Time Dashboard</h1> 
+    <p class="lead">Track, analyze, and optimize airline operations in real-time.</p> 
+  </div> </section> <!-- Summary Cards --> 
+  <section class="container my-5"> 
+    <div class="row g-4 text-center"> <div class="col-md-3"> 
+      <div class="p-4 bg-white summary-card"> 
+        <div class="summary-icon mb-2"><i class="fas fa-plane-departure"></i></div> 
+        <h5>Total Flights</h5> <h3>12,340</h3> </div> </div> <div class="col-md-3"> 
+          <div class="p-4 bg-white summary-card"> <div class="summary-icon mb-2"><i class="fas fa-clock"></i></div> 
+          <h5>Avg Delay (Min)</h5> <h3>15.7</h3> </div> </div> <div class="col-md-3"> 
+            <div class="p-4 bg-white summary-card"> 
+              <div class="summary-icon mb-2"><i class="fas fa-check-circle"></i></div> <h5>On-Time %</h5> 
+              <h3>87%</h3> </div> </div> <div class="col-md-3"> <div class="p-4 bg-white summary-card"> 
+                
+                <div class="summary-icon mb-2"><i class="fas fa-smile"></i></div> 
+                <h5>Avg. Satisfaction</h5> <h3>4.3 ⭐</h3> </div> </div> </div> 
+              </section> <!-- About Section --> <section class="container"> 
+                <div class="about-section text-center"> 
+                  <h3 class="section-title">📊 About This Dashboard</h3> 
+                  <p class="lead">This interactive dashboard empowers airline analysts and operations managers to monitor flight punctuality, uncover delay patterns, and enhance passenger experience. The project highlights the impact of data visualization in driving smarter, data-driven actions.
+                    Looking ahead, it sets the foundation for deeper predictive and trend-based analytics.</p> </div> </section> <!-- Footer --> <footer class="text-center mt-5 mb-3 text-muted"> © 2025 Wings on Time · Flight Analytics Platform </footer> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> </body> </html>

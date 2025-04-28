@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | Wings On Time</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('download.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    .login-card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.3);
+      width: 100%;
+      max-width: 400px;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #005f99;
+    }
+    .btn-primary {
+      background-color: #005f99;
+      border-color: #005f99;
+    }
+    .btn-primary:hover {
+      background-color: #004c80;
+      border-color: #004c80;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 1rem;
+      width: 60px;
+    }
+    .welcome-tagline {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-card">
+    <img src="airplane-travel-flying-png.webp" alt="Flight Logo" class="logo">
+    <div class="welcome-tagline">
+      ✈️ Welcome to Wings On Time – Your Flight Analytics Hub
+    </div>
+    <h3 class="text-center mb-4">Login</h3>
+    <form onsubmit="handleLogin(event)">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" required>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="remember">
+        <label class="form-check-label" for="remember">Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Login</button>
+      <div class="text-center mt-3">
+        <a href="#" class="text-decoration-none">Forgot password?</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+      window.location.href = "home.html"; // Redirect after login
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

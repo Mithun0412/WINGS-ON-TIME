@@ -1,0 +1,219 @@
+<!DOCTYPE html> <html lang="en"> 
+  <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <title>Project Report – Wings On Time</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" /> <style> body { background-color: #f8f9fa; } .accordion-button:hover { background-color: #e9ecef; transition: background-color 0.3s ease; } .nav-link:hover { text-decoration: underline; } .section-title { font-size: 1.25rem; font-weight: 500; } </style> </head> <body> <!-- Navigation Bar --> <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4"> <div class="container-fluid"> <a class="navbar-brand" href="#">Wings On Time</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarNav"> <ul class="navbar-nav ms-auto"> <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li> <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li> <li class="nav-item"><a class="nav-link" href="analytics.html">Analytics</a></li> <li class="nav-item"><a class="nav-link active" href="#">Report</a></li> </ul> </div> </div> </nav> <div class="container"> <h2 class="mb-4 text-center">Project Report: Wings On Time</h2> <div class="accordion" id="reportAccordion">
+  <!-- Executive Summary -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingSummary">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSummary" aria-expanded="true">
+      1. Executive Summary
+    </button>
+  </h2>
+  <div id="collapseSummary" class="accordion-collapse collapse show">
+    <div class="accordion-body">
+      This project presents a dashboard-based solution to monitor airline delays and their impact on passengers. It addresses key operational concerns such as average delay time, best and worst performing airlines, delay trends, and data-driven decisions to improve service and operations.
+    </div>
+  </div>
+</div>
+
+<!-- Introduction -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingIntro">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIntro">
+      2. Introduction
+    </button>
+  </h2>
+  <div id="collapseIntro" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <p>This project was initiated to explore real-world airline operations and improve schedule adherence using data analytics. With increasing flight delays affecting passenger satisfaction, this dashboard helps stakeholders take action through insights and trends.</p>
+      <p>Objectives include:</p>
+      <ul>
+        <li>Monitor airline on-time performance</li>
+        <li>Identify causes and patterns of delays</li>
+        <li>Support strategic decision-making</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Dataset Overview -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingData">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseData">
+      3. Dataset Overview
+    </button>
+  </h2>
+  <div id="collapseData" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <p>The dataset includes flight details such as airline names, origin and destination airports, delay types and duration, satisfaction scores, and more.</p>
+      <ul>
+        <li><strong>Source:</strong> Simulated operational dataset</li>
+        <li><strong>Fields:</strong> Airline, Departure/Arrival Delay, Reason, Ticket Class, Satisfaction Score</li>
+        <li><strong>Coverage:</strong> Over 10,000 flights across multiple airports and airlines</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Data Preprocessing -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingPreprocessing">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePreprocessing">
+      4. Data Preprocessing
+    </button>
+  </h2>
+  <div id="collapsePreprocessing" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li>Missing or invalid values were handled using imputation techniques.</li>
+        <li>New fields like delay duration category and satisfaction class were derived.</li>
+        <li>IBM Cognos Data Modules and Excel were used for data shaping.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Dashboard Design -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingDesign">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDesign">
+      5. Dashboard Design Approach
+    </button>
+  </h2>
+  <div id="collapseDesign" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <p>The dashboard is tailored for airline managers, airport staff, and analysts.</p>
+      <ul>
+        <li><strong>Goals:</strong> Clarity, interactivity, responsiveness</li>
+        <li><strong>Layout:</strong> Navigation with tabbed structure (Home, Dashboard, Analytics, Report)</li>
+        <li><strong>Visuals:</strong> Line chart, heatmap, bubble chart, box plot, tree map</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Visualizations -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingViz">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseViz">
+      6. Key Visualizations and Features
+    </button>
+  </h2>
+  <div id="collapseViz" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><strong>Bubble Chart:</strong> Delay reasons vs duration</li>
+        <li><strong>Box Plot:</strong> Delay variation per airline</li>
+        <li><strong>Heatmap:</strong> Delay by time and airport</li>
+        <li><strong>TreeMap:</strong> Delay proportion by reason</li>
+        <li><strong>Filters:</strong> Airline, time, delay type</li>
+        <li><strong>KPIs:</strong> Avg Delay, On-time %, Top Airlines</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Insights -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingInsights">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInsights">
+      7. Insights and Observations
+    </button>
+  </h2>
+  <div id="collapseInsights" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li>Airlines A and B have superior on-time rates</li>
+        <li>Most delays cluster around 2–5 PM, especially at hubs</li>
+        <li>Technical and late aircraft issues are leading causes</li>
+        <li>Passenger satisfaction drops sharply with delays over 30 min</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Decisions -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingDecisions">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDecisions">
+      8. Business Decisions Supported
+    </button>
+  </h2>
+  <div id="collapseDecisions" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th>Area</th>
+            <th>Decision</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Airline Ops</td><td>Who to audit, who performs well</td></tr>
+          <tr><td>Schedule Mgmt</td><td>Rescheduling, route changes</td></tr>
+          <tr><td>Airport Mgmt</td><td>Resource balancing</td></tr>
+          <tr><td>Passenger Service</td><td>Compensation, loyalty handling</td></tr>
+          <tr><td>Maintenance</td><td>Inspection and investment plans</td></tr>
+          <tr><td>Business Strategy</td><td>Fare restructuring, partnership strategy</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Limitations -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingLimitations">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLimitations">
+      9. Limitations and Challenges
+    </button>
+  </h2>
+  <div id="collapseLimitations" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li>Some missing or synthetic values in delay types</li>
+        <li>Historical scope limited to recent quarters</li>
+        <li>IBM Cognos may restrict complex predictive modeling</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Conclusion -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingConclusion">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConclusion">
+      10. Conclusion & Recommendations
+    </button>
+  </h2>
+  <div id="collapseConclusion" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      The dashboard reveals key delay patterns and performance gaps. Airlines and airport management can use this for:
+      <ul>
+        <li>Targeted maintenance planning</li>
+        <li>Improved scheduling and buffer time</li>
+        <li>Enhancing customer loyalty programs</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Appendix -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingAppendix">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAppendix">
+      11. Appendix
+    </button>
+  </h2>
+  <div id="collapseAppendix" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li>Sample snapshot of dataset (see data section)</li>
+        <li>Screenshots of dashboard (can be added below)</li>
+        <li>Formulae: On-time % = (Total - Delayed) / Total * 100</li>
+        <li>Glossary: Delay Reason, Ticket Class, Satisfaction Score</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div> <!-- End accordion --> </div> <!-- End container --> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> </body> </html>
+</div>
